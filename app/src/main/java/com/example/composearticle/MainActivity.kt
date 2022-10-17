@@ -9,6 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.data.EmptyGroup.name
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composearticle.ui.theme.ComposeArticleTheme
 
@@ -30,7 +31,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun Article() {
     Text(text = "Hello $name!")
 }
 
@@ -38,6 +39,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ComposeArticleTheme {
-        Greeting("Android")
+        Article()
     }
 }
